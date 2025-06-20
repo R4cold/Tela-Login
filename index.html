@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form onsubmit="return false;">
+        <div class="">
+            <h1>Faça o seu login</h1>
+        </div>
+        <div class="barra-horizontal"> </div>
+
+        <div class="campo-input">
+            <label for="email">Seu e-mail</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="campo-input">
+            <label for="password">Sua senha</label>
+            <input type="password" id="password" required minlength="6">
+        </div>
+
+        <div class="lembrar">
+            <input type="checkbox">
+            <p>Lembrar-me</p>
+        </div>
+
+        <button id="entrarBtn">Entrar</button>
+
+        <p>Esqueceu sua senha? <a href="">Clique Aqui</a></p>
+    </form>
+
+    <script>
+        const botao = document.getElementById("entrarBtn");
+
+        botao.addEventListener("click", function () {
+            const email = document.getElementById("email").value.trim();
+            const senha = document.getElementById("password").value;
+
+            if (!email) {
+                alert("Por favor, preencha o campo de e-mail.");
+                return;
+            }
+
+            if (!senha) {
+                alert("Por favor, preencha o campo de senha.");
+                return;
+            }
+
+            if (senha.length < 6) {
+                alert("A senha deve ter no mínimo 6 caracteres.");
+                return;
+            }
+
+            alert(`Bem-vindo, ${email}!`);
+        });
+    </script>
+</body>
+
+</html>
