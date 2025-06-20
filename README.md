@@ -17,7 +17,3 @@ Esta tela de login **não possui backend** nem qualquer tipo de funcionalidade d
 
 Você pode acessar a página online aqui:  
 -> [https://seu-usuario.github.io/tela-login/](https://seu-usuario.github.io/tela-login/)
-
-## Captura de tela
-
-![preview da tela](screenshot.png)
