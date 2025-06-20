@@ -13,6 +13,8 @@ Uma tela de login feita com HTML e CSS puro, com design adaptado para celular e 
 Esta tela de login **não possui backend** nem qualquer tipo de funcionalidade de autenticação real.  
 É apenas um layout estático para fins de estudo, protótipo ou apresentação visual.
 
+## Pré-Visualização
+
 ![preview da tela 1](PC.jpg)
 ![preview da tela 2](mobile.jpg)
 
